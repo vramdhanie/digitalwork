@@ -20,7 +20,7 @@ header {
 	padding: 10px 40px 40px 40px;
 	border: 1px dotted #bbb;
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-	width: 40%;
+	width: 90%;
 	margin: 0 auto 50px auto;
 	background-color: #fff;
 	text-align: center;
@@ -36,7 +36,7 @@ section {
 	border: 1px dotted #bbb;
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 	margin: 0 auto 50px auto;
-	width: 40%;
+	width: 90%;
 	text-align: center;
 	background-color: #fff;
 }
@@ -45,22 +45,92 @@ section:nth-child(even) {
 }
 section p {
 	text-align: center;
-	width: 50%;
+	width: 80%;
 	font-size: .9em;
 	display: inline-block;
 }
 section img {
-	width: 70%;
+	width: 90%;
 }
 
+/* Mobile devices (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+	body {
+		margin-top: 20px;
+	}
+	
+	h1 {
+		font-size: 2em;
+	}
+	
+	h2 {
+		font-size: 1.3em;
+	}
+	
+	header {
+		width: 95%;
+		padding: 10px 20px 30px 20px;
+		margin-bottom: 30px;
+	}
+	
+	header img {
+		width: 80%;
+	}
+	
+	header p {
+		font-size: 1em;
+	}
+	
+	section {
+		width: 95%;
+		padding: 15px 20px;
+		margin-bottom: 30px;
+	}
+	
+	section p {
+		width: 95%;
+		font-size: 0.85em;
+	}
+	
+	section img {
+		width: 95%;
+	}
+}
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-  
-  header, section {
-	width: 70%;
-  }
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	header {
+		width: 80%;
+	}
+	
+	section {
+		width: 80%;
+	}
+	
+	section p {
+		width: 85%;
+	}
+	
+	section img {
+		width: 85%;
+	}
+}
 
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+	header {
+		width: 40%;
+	}
+	
+	section {
+		width: 40%;
+	}
+	
+	section p {
+		width: 50%;
+	}
+	
+	section img {
+		width: 70%;
+	}
 }
